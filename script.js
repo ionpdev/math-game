@@ -17,3 +17,51 @@ const finalTimeEl = document.querySelector(".final-time");
 const baseTimeEl = document.querySelector(".base-time");
 const penaltyTimeEl = document.querySelector(".penalty-time");
 const playAgainBtn = document.querySelector(".play-again");
+
+// Equations
+let questionAmount = 0;
+let equationsArray = [];
+
+// Game Page
+let firstNumber = 0;
+let secondNumber = 0;
+let equationObject = {};
+const wrongFormat = [];
+
+// Time
+
+// Scroll
+
+// Get the value from selected radio button
+function getRadioValue() {
+  let radioValue;
+  radioInputs.forEach((radioInput) => {
+    if (radioInput.checked) {
+      radioValue = radioInput.value;
+    }
+  });
+  return radioValue;
+}
+
+// Form that decides amount of questions
+function selectQuestionAmount(e) {
+  e.preventDefault();
+  questionAmount = getRadioValue(
+    console.log("question amount: ", questionAmount)
+  );
+}
+
+//
+startForm.addEventListener("click", () => {
+  radioContainers.forEach((radioEl) => {
+    // Remove Selected Label Styling
+    radioEl.classList.remove("selected-label");
+    // add it back if radio imput is checked
+    if (radioEl.children[1].checked) {
+      radioEl.classList.add("selected-label");
+    }
+  });
+});
+
+// Event Listeners
+startForm.addEventListener("submit", selectQuestionAmount);
