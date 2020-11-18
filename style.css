@@ -4,12 +4,18 @@
   box-sizing: border-box;
 }
 
+/* rgb(247,247,247)    
+rgb(78,213,199)    
+rgb(247,166,123)
+rgb(212,72,101)    
+rgb(184,218,141) */
+
 :root {
-  --primary-color: rgb(189, 0, 255);
-  --select-color: rgb(0, 184, 255);
-  --success: rgb(0, 255, 159);
-  --danger: rgb(214, 0, 255);
-  --backgroundImage: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23bd00ff' fill-opacity='0.44' fill-rule='evenodd'/%3E%3C/svg%3E");
+  --primary-color: rgb(212, 72, 101);
+  --select-color: rgb(247, 166, 123);
+  --success: rgb(184, 218, 141);
+  --danger: rgb(212, 72, 101);
+  --backgroundImage: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23f7f7f7' fill-opacity='0.47' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
 body {
@@ -19,7 +25,7 @@ body {
   display: flex;
   justify-content: center;
   height: 100vh;
-  background-color: #00ff9f;
+  background-color: #4ed5c7;
   background-image: var(--backgroundImage);
 }
 
